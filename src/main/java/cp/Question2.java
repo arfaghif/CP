@@ -8,7 +8,7 @@ public class Question2 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String s = sc.nextLine();
-        boolean isPalindrome = StringUtils.isPalindrome(s);
+        boolean isPalindrome = Solution2.isPalindrome(s);
         if (isPalindrome) {
             System.out.println("Palindrome");
         } else {
@@ -17,7 +17,7 @@ public class Question2 {
     }
 }
 
-class StringUtils {
+class Solution2 {
     public static boolean isPalindrome(String s) {
         int l = s.length();
         for (int i = 0; i < l / 2; i++) {

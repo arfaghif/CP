@@ -13,12 +13,12 @@ public class Question1 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int max = ArrayUtils.findMax(arr);
+        int max = Solution1.findMax(arr);
         System.out.println("Maximum number: " + max);
     }
 }
 
-class ArrayUtils {
+class Solution1 {
     public static int findMax(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
