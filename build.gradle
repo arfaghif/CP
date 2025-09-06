@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    // Default main class, can be overridden with --args
+    mainClass = 'cp.Question1'
+}
+
+// Allow running any class with main method
+run {
+    if (project.hasProperty('mainClass')) {
+        mainClass.set(project.getProperty('mainClass'))
+    }
+}
