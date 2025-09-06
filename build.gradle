@@ -17,3 +17,11 @@ run {
         mainClass.set(project.getProperty('mainClass'))
     }
 }
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+test {
+    useJUnitPlatform()
+}
