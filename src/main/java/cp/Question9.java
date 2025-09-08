@@ -7,14 +7,13 @@ public class Question9 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string:");
         String s = sc.nextLine();
-        Solution9 sol = new Solution9();
-        int result = sol.lengthOfLongestSubstring(s);
+        int result = Solution9.lengthOfLongestSubstring(s);
         System.out.println(result);
     }
 }
 
 class Solution9 {
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         int n = s.length();
         int ans = 0;
         int[] index = new int[128]; // ASCII character set

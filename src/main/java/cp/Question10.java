@@ -8,7 +8,7 @@ public class Question10 {
 
 class Solution10 {
     // Add your solution methods here
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int totalLength = nums1.length + nums2.length;
         int medianIndex1 = (totalLength - 1) / 2;
         int medianIndex2 = totalLength / 2;
@@ -47,7 +47,7 @@ class Solution10 {
         return (median1 + median2) / 2.0;
     }
 
-    public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArrays2(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;
         if (m > n) {
